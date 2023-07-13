@@ -2,6 +2,6 @@ from django.shortcuts import render
 
 def index(request):
 	template_name= 'index.html'
-	nombres=['Juan', 'Ceci', 'Marcos']
+	nombres=['Juan', 'Pedro', 'Marcos']
 	contexto = {'nombres': nombres}
 	return render(request, template_name,contexto)
